@@ -30,7 +30,7 @@ menu:
       url: /
       weight: 1
     - name: All posts
-      url: /posts
+      url: /post
       weight: 2
     - name: About
       url: /about
