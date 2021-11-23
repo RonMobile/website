@@ -1,42 +1,43 @@
-baseURL: http://example.org/
+baseurl: /
 languageCode: en-us
-title: R on Mobile
-theme: hugo-ink
-paginate: 5
-copyright: © Copyright notice
-pygmentsstyle: vs
-pygmentscodefences: yes
-pygmentscodefencesguesssyntax: yes
-googleAnalytics: UA-123-45
-disqusShortname: ink-demo
-params:
-  avatar: https://raw.githubusercontent.com/RonMobile/logo/main/logo-v2.png?token=AEDDDCOEF2E5UPZRR3JYQP3BRLTT4
-  disableDisqusTypes: page
-  featherIconsCDN: yes
-  mode: auto
-  social:
-    - icon: github
-      name: Github
-      url: https://github.com/knadh/hugo-ink
-    - icon: rss
-      name: RSS
-      url: /index.xml
-    - icon: linkedin
-      name: Github
-  subtitle: Running R on mobile devices
+title: A Hugo website
+theme: hugo-lithium
+googleAnalytics: ''
+disqusShortname: ''
+ignoreFiles:
+  - \.Rmd$
+  - \.Rmarkdown$
+  - _cache$
+  - \.knit\.md$
+  - \.utf8\.md$
+permalinks:
+  post: /:year/:month/:day/:slug/
 menu:
   main:
-    - name: Home
-      url: /
-      weight: 1
-    - name: All posts
-      url: /post
-      weight: 2
     - name: About
-      url: /about
-      weight: 3
-    - name: Tags
-      url: /tags
-      weight: 4
-taxonomies:
-  tag: tags
+      url: /about/
+    - name: GitHub
+      url: https://github.com/rstudio/blogdown
+    - name: Twitter
+      url: https://twitter.com/rstudio
+params:
+  MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
+  MathJaxVersion: 2.7.5
+  description: A website built through Hugo and blogdown.
+  favicon: favicon.ico
+  highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
+  highlightjsLang:
+    - r
+    - yaml
+  highlightjsTheme: github
+  highlightjsVersion: 9.12.0
+  logo:
+    alt: Logo
+    height: 50
+    url: logo.png
+    width: 50
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: yes
