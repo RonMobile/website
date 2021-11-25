@@ -1,4 +1,44 @@
-theme: "hugo-theme-pure"
-baseURL: http://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseurl: https://ronmobile.github.io
+DefaultContentLanguage: en
+title: R on Mobile
+theme: beautifulhugo
+metaDataFormat: yaml
+pygmentsStyle: trac
+pygmentsUseClasses: yes
+pygmentsCodeFences: yes
+pygmentsCodefencesGuessSyntax: yes
+Params:
+  comments: yes
+  commit: no
+  dateFormat: January 2, 2006
+  delayDisqus: yes
+  favicon: img/favicon.ico
+  logo: img/logo-v2.png
+  mainSections:
+    - post
+    - posts
+  readingTime: yes
+  rss: yes
+  showRelatedPosts: yes
+  socialShare: yes
+  subtitle: 
+  useHLJS: yes
+  wordCount: yes
+Author:
+  email: youremail@domain.com
+  facebook: username
+  github: username
+  linkedin: username
+  twitter: username
+  youtube: user/username
+menu:
+  main:
+    - name: Blog
+      url: ''
+      weight: 1
+    - name: About
+      url: page/about/
+      weight: 3
+    - name: Tags
+      url: tags
+      weight: 3
