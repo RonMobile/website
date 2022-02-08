@@ -42,3 +42,10 @@ menu:
     - name: Tags
       url: tags
       weight: 3
+      
+security:
+  funcs:
+    getenv:
+      - ^HUGO_
+      - ^WC_
+      - ^BLOGDOWN_
