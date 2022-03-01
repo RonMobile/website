@@ -1,7 +1,7 @@
 ---
-title: "Project purpose"
+title: "Step 1 - Termux"
 author: "Krzysztof Joachimiak, Adam Karolewski"
-date: '2022-02-023'
+date: '2022-02-23'
 image: ''
 slug: []
 subtitle: ''
